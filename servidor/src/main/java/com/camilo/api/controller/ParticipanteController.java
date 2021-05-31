@@ -13,7 +13,7 @@ import com.camilo.api.repository.ParticipanteRepository;
 
 @RestController
 @RequestMapping(path = "/participante")
-@CrossOrigin(origins = "http://localhost")
+@CrossOrigin(origins = "http://localhost:4200")
 public class ParticipanteController {
 	@Autowired
 	private ParticipanteRepository participanteRepository;

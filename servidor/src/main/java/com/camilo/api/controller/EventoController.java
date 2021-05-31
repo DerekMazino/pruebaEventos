@@ -13,7 +13,7 @@ import com.camilo.api.repository.EventoRepository;
 
 @RestController
 @RequestMapping(path = "/eventos")
-@CrossOrigin(origins = "http://localhost")
+@CrossOrigin(origins = "http://localhost:4200")
 public class EventoController {
 	@Autowired
 	private EventoRepository eventoRepository;

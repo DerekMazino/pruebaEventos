@@ -8,6 +8,8 @@ import { EventListComponent } from './components/event-list/event-list.component
 import { EventComponent } from './components/event/event.component';
 import { PartakerListComponent } from './components/partaker-list/partaker-list.component';
 
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { PartakerListComponent } from './components/partaker-list/partaker-list.
     PartakerListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
