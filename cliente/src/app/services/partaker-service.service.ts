@@ -6,7 +6,7 @@ import {Partaker} from '../../app/models/partaker'
   providedIn: 'root'
 })
 export class PartakerServiceService {
-  private url: string = "http://localhost:8080/eventos/obtener";
+  private url: string = "http://localhost:8080/participante/";
   constructor(
     private http: HttpClient
   ) { }

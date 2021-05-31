@@ -18,7 +18,7 @@ export class PartakerFormComponent implements OnInit {
     private parkaterService: PartakerServiceService,
     ) { }
   events :Event[] = [];
-
+  mensaje: Partaker;
   ngOnInit(): void {
     this.eventService.getEventAll().subscribe(
       e => this.events = e
@@ -27,6 +27,9 @@ export class PartakerFormComponent implements OnInit {
 
   create(){
     console.log(this.partaker);
+    this.parkaterService.createParker(this.partaker).subscribe(
+      e => this.mensaje = e
+    );
     return false;
   }
 
