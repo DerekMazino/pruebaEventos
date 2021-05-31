@@ -5,11 +5,11 @@
         <label for="">Descripción: {{event.descripcionE}}</label> 
         <label for=""># de Participantes Inscritos: {{event.nParcticipantes}}</label>
         <div>
-            <button class= "btn btn-primary">Show</button>
+            <button class= "btn btn-primary">Participantes Inscritos</button>
             <!-- <button class= "btn btn-danger">Delete</button> -->
         </div>
     </div>
-    <!-- <div class="card-body " [hidden] = "task.hide">
-        {{event.descripcionE}}
-    </div> -->
+    <div class="card-body " [hidden] = "false">
+        <app-partaker-list [event] = "event"></app-partaker-list>
+    </div>
 </div>

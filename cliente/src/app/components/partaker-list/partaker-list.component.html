@@ -1,1 +1,11 @@
-<p>partaker-list works!</p>
+<ul class="list-gruop">
+    <!-- <li class="list-gruop-item list-group-item-action"
+    *ngFor="let partaker of partakers">
+        
+    </li> -->
+    <ng-container *ngFor="let partaker of partakers" >
+        <li *ngIf="partaker.eveId===event.idE">
+            {{partaker.pNombre}}  {{partaker.sNombre}}
+        </li> 
+    </ng-container>
+</ul>
