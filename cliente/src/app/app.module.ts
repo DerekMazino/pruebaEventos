@@ -10,6 +10,7 @@ import { PartakerListComponent } from './components/partaker-list/partaker-list.
 
 import {HttpClientModule} from '@angular/common/http';
 
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

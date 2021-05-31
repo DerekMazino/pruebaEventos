@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {EventServiceService} from '../../services/event-service.service';
+import {PartakerServiceService} from '../../services/partaker-service.service';
 import {Event} from '../../models/event';
+import {Partaker} from '../../models/partaker';
 @Component({
   selector: 'app-partaker-form',
   templateUrl: './partaker-form.component.html',
@@ -8,13 +10,24 @@ import {Event} from '../../models/event';
 })
 export class PartakerFormComponent implements OnInit {
 
-  constructor(private eventService: EventServiceService) { }
+  partaker: Partaker = new Partaker();
+  title: string = "Registro de Participante";
+
+  constructor(
+    private eventService: EventServiceService,
+    private parkaterService: PartakerServiceService,
+    ) { }
   events :Event[] = [];
 
   ngOnInit(): void {
     this.eventService.getEventAll().subscribe(
       e => this.events = e
     );
+  }
+
+  create(){
+    console.log(this.partaker);
+    return false;
   }
 
 }
