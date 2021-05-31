@@ -23,7 +23,9 @@
             </div>
             <div class="form-group">
                 <label for="evento">Evento al que asistirá</label>
-                <select name="" id="" class="form-control"></select>
+                <select class="form-control">
+                    <option value="{{event.idE}}" *ngFor = "let event of events">{{event.nombreE}}</option>
+                </select>
             </div>
             <br>
             <button class="btn btn-primary btn-block">Enviar</button>
