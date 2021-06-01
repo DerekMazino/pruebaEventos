@@ -13,5 +13,5 @@ public class Evento {
 
     public String nombreE;
     public String descripcionE;
-    public int nParcticipantes;
+    public int nParticipantes;
 }

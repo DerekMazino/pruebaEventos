@@ -5,7 +5,7 @@
     </li> -->
     <ng-container *ngFor="let partaker of partakers" >
         <li *ngIf="partaker.eveId===event.idE">
-            {{partaker.pNombre}}  {{partaker.sNombre}}
+            {{partaker.pNombre}}  {{partaker.sNombre}} {{partaker.pApellido}} {{partaker.sApellido}} 
         </li> 
     </ng-container>
 </ul>
