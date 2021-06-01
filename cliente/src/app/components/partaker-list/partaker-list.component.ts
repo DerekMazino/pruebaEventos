@@ -17,5 +17,14 @@ export class PartakerListComponent implements OnInit {
       e => this.partakers = e
     );
   }
+  parker: Partaker = new Partaker();
+  openDelete(partaker: Partaker){
+    if(confirm("Esta segeguro de eliminar?")){
+      this.partakerService.deleteParker(partaker.idP).subscribe(
+        e => this.parker = e
+      );
+    }
+    window.location.reload(); 
+  }
 
 }

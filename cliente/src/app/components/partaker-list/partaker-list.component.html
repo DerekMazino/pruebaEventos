@@ -6,6 +6,7 @@
     <ng-container *ngFor="let partaker of partakers" >
         <li *ngIf="partaker.eveId===event.idE">
             {{partaker.pNombre}}  {{partaker.sNombre}} {{partaker.pApellido}} {{partaker.sApellido}} 
+            <button class="btn btn-danger" (click) = "openDelete(partaker)">Delete</button>
         </li> 
     </ng-container>
 </ul>

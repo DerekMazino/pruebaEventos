@@ -1,4 +1,5 @@
 export class Partaker {
+    idP: number;
     pNombre: string;
     sNombre: string;
     pApellido: string;

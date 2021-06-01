@@ -28,7 +28,7 @@ export class PartakerServiceService {
 
   //Obtener un Participante
   deleteParker(id: number):Observable<Partaker>{
-    return this.http.delete<Partaker>(this.url+'/delete'+id);
+    return this.http.delete<Partaker>(this.url+'eliminar/'+id);
   }
 
   //Obtener un Participante
