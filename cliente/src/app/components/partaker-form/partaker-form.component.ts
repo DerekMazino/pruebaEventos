@@ -27,9 +27,11 @@ export class PartakerFormComponent implements OnInit {
 
   create(){
     console.log(this.partaker);
-      this.parkaterService.createParker(this.partaker).subscribe(
-        e => this.mensaje = e
-      );
+    this.parkaterService.createParker(this.partaker).subscribe(
+      e => this.mensaje = e
+    );
+    window.location.reload(); 
+    
   }
 
 }

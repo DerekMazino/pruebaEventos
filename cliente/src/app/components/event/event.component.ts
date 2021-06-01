@@ -7,6 +7,7 @@ import {Event} from '../../models/event'
 })
 export class EventComponent implements OnInit {
   @Input() event: Event;
+  mostrar: boolean;
   constructor() { }
 
   ngOnInit(): void {
